@@ -1,6 +1,7 @@
 import React from 'react';
+import PersonalBudget from '../Chart/Chart'
 
-
+import D3js from '../d3JS/d3JS'
 
 function HomePage() {
   return (
@@ -65,12 +66,19 @@ function HomePage() {
             </p>
         </article>
 
-        <article>
+        <div class = "dchart">
             <h1>Chart</h1>
-            <p>
-                <canvas id="myChart" width="400" height="400"></canvas>
-            </p>
-        </article>
+                <PersonalBudget/>
+        </div>
+
+
+        <section>
+
+            <h1>Donut Chart</h1>
+            <div id="chart" class = "dchart">
+                <D3js/>
+            </div>  
+        </section>
 
     </div>
 
